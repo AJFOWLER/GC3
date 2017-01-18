@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  age: 1
+  weight: 1.5
+  height: 1.5
+  creatinine: 1.5
+  crcl: 1.5
+  gender: MyText
+  crcl: 1.5
+  ibw: 1.5
+  bmi: 1.5
+  ddw: 1.5
+  dose: 1
+
+two:
+  age: 1
+  weight: 1.5
+  height: 1.5
+  creatinine: 1.5
+  crcl: 1.5
+  gender: MyText
+  crcl: 1.5
+  ibw: 1.5
+  bmi: 1.5
+  ddw: 1.5
+  dose: 1

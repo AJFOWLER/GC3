@@ -1,0 +1,13 @@
+<h1> Showing dose for <%=@patient.weight%>kg male </h1>
+
+<p>IBW is: <%= ibw %> kg</p>
+<p>DDW is: <%= ddw %> <p>
+	
+	<p> DOSE IS: <%= calculate_dose%>mg</p>
+	<p> Creatinine Clearance is: <%= crcl %> </p>
+
+<p> Height is <%= @patient.height %> cm </p>
+
+<p> Gender is <%= @patient.gender%> </p>
+
+<%= link_to "calculate new dose", new_patient_path%>

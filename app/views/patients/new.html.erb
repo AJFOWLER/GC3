@@ -1,0 +1,21 @@
+<h1> CALCUALTE THE REQUIRED DOSE OF GENTAMICIN </h1>
+	
+	<%= form_for @patient do |f| %>
+<p>
+	<%= f.label :age, 'Age in Years'%> <br>
+	<%= f.number_field :age %> 	<br>
+	
+	<%= f.label :gender, 'Gender' %> <br>
+	<%= f.select :gender, Patient::GENDERTYPES %> <br>
+	
+	<%= f.label :height, 'Height in Centimetres' %> <br>
+	<%= f.number_field :height %> <br>
+	
+	<%= f.label :weight, 'Weight in Kilograms' %> <br>
+	<%= f.number_field :weight %> <br>
+
+		<%= f.label :creatinine, "Creatinine in micromols/Litre ('umol/L')"%><br>
+		<%= f.number_field :creatinine %>
+		<br>
+	<%= f.submit 'Calculate dose' %>
+	<%end%>
