@@ -1,13 +1,15 @@
-<h1> Showing dose for <%=@patient.weight%>kg male </h1>
+<h3> Please note that this calculator is designed for adult patients only; and is not to be used at the extremes of weight or age <h3>
 
-<p>IBW is: <%= ibw %> kg</p>
-<p>DDW is: <%= ddw %> <p>
-	
-	<p> DOSE IS: <%= calculate_dose%>mg</p>
-	<p> Creatinine Clearance is: <%= crcl %> </p>
-
-<p> Height is <%= @patient.height %> cm </p>
-
+<h1> Showing dose for <%=@patient.weight.to_i%>kg <%= @patient.gender.downcase%> </h1>
+<p> Height is <%= @patient.height.to_i %> cm </p>
 <p> Gender is <%= @patient.gender%> </p>
+
+
+<p>Ideal Body Weight is: <%= ibw.to_i %> kg</p>
+<p>Dose Determining Weight is: <%= ddw.to_i %> kg <p>
+	<p> Creatinine Clearance is: <b><%= crcl %></b> </p>
+	
+	<p> Suggested dose is: <b><%= calculate_dose%>mg </b></p>
+	
 
 <%= link_to "calculate new dose", new_patient_path%>
